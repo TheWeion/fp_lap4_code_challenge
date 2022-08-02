@@ -1,7 +1,43 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 .main-container {
     background-color: #28384A;
     margin: auto;
     display: flex;
     flex-direction: column;
     color: #fff;
+}
+
+#url-form {
+    padding: 60px 0;
+}
+
+#url_value {
+    overflow: visible;
+    cursor: text;
+    padding: 5px;
+    background-color: aliceblue;
+    color: #000;
+}
+
+#shorten-url {
+    background-color: #2281C2;
+    color: aliceblue;
+}
+
+.statement {
+    background-color: #F5F7F8;
+    padding: 60px 0;
+    color: #000;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.link-text {
+    color: #3E96D4;
+    font-weight: bold;
 }
