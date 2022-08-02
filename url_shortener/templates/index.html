@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Free URL Shortener</h1>
+    
+    <section id="url-form">
+        <form id="submission" action="/url-shortener" method="POST">
+            <span id="input">
+                <input type="url" id="url_value" name="url_value">
+            </span>
+            <input type="submit" id="shorten-url" value="submit url">
+         <p>By clicking Shorten URL, you agree to Rebrandly's Terms of Use, Privacy Policy and Cookie Policy</p>
+        </form>
+
+    </section>
+
+    <section>
+        <h2>A fast and simple URL shortener</h2>
+
+        <p>Free URL Shortener for transforming long, ugly links into nice, memorable and trackable short URLs. Use it to shorten links for any social media platforms, blogs, SMS, emails, ads, or pretty much anywhere else you want to share them. Twitter, Facebook, YouTube, Instagram, WhatsApp, emails, SMS, videos. RB.GY is the best free alternative to generic URL shorteners like bitly and tinyurl. After shorterning the URL, check how many clicks it received</p>
+    </section>
+        
+    
+
+{% endblock %}
