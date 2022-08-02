@@ -1,4 +1,5 @@
 from flask import render_template, request, redirect, url_for, flash
+from werkzeug import exceptions
 from datetime import datetime
 from url_shortener.models import ShortUrls
 from url_shortener import app, db
@@ -32,3 +33,15 @@ def index():
 		return render_template('index.html', short_url=short_url)
 
 	return render_template('index.html')
+
+@app.route('/<short_id>')
+def redirect_to_url(short_id):
+	link = ShortUrls.query.filter_by(short_id=short_id).first()
+	if link:
+		return redirect(link.original_url)
+	else:
+		raise exceptions.NotFound()
+
+@app.errorhandler(exceptions.NotFound)
+def handle_404(e):
+    return render_template('errors/404.html'), 404
