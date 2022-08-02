@@ -1,0 +1,7 @@
+.main-container {
+    background-color: #28384A;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
