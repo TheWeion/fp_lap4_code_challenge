@@ -7,7 +7,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    color: #fff;
+    
 }
 
 .url-form {
@@ -18,7 +18,6 @@ input {
     overflow: visible;
     cursor: text;
     padding: 5px;
-    background-color: aliceblue;
     color: #000;
 }
 
@@ -28,7 +27,6 @@ button {
 }
 
 .statement {
-    background-color: #F5F7F8;
     padding: 60px 0;
     color: #000;
 }
