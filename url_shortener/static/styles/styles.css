@@ -14,7 +14,7 @@
     padding: 60px 0;
 }
 
-#url_value {
+input {
     overflow: visible;
     cursor: text;
     padding: 5px;
@@ -22,7 +22,7 @@
     color: #000;
 }
 
-#shorten-url {
+button {
     background-color: #2281C2;
     color: aliceblue;
 }
