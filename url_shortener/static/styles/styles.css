@@ -21,7 +21,7 @@ input {
     color: #000;
 }
 
-button {
+.btn {
     background-color: #2281C2;
     color: aliceblue;
     margin: 20px auto;
