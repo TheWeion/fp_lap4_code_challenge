@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Audiowide-Regular';
+    src: url(../fonts/Audiowide\ Regular.ttf) format('truetype');
+}
 
 *, ::after, ::before {
     box-sizing: border-box;
@@ -12,12 +16,16 @@ body {
     background: #28384A;
 }
 
+.hero-font {
+    font-family: 'Audiowide-Regular';
+}
+
 .container {
     background-color: #28384A;
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 h3 {
@@ -33,13 +41,12 @@ input {
 
 footer {
     padding-top: 30px;
-    text-align: center;
     color: #81ffd9;
 }
 
 .btn {
-    background-color: #2281C2;
-    color: aliceblue;
+    background-color: #81FFD9;
+    color: #000;
     margin: 20px auto;
 }
 
@@ -50,7 +57,7 @@ footer {
 }
 
 .bold-text {
-    color: #3E96D4;
+    color: #81FFD9;
     font-weight: bold;
 }
 
@@ -72,4 +79,36 @@ footer {
 .short-url {
     color: #000;
     text-decoration: none;
+}
+
+#logo {
+    /* drop shadow for svg logo */
+    /* -webkit-filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7)); */
+
+    -webkit-animation: glowing 2s ease-in-out infinite;
+    animation: glowing 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes glowing {
+    0% {
+        -webkit-filter: drop-shadow(0 0 0px #3bffc4);
+    }
+    50% {
+        -webkit-filter: drop-shadow(0 0 10px #81ffd9);
+    }
+    100% {
+        -webkit-filter: drop-shadow(0 0 0px #3bffc4);
+    }
+}
+@keyframes glowing {
+    0% {
+        filter: drop-shadow(0 0 0px #3bffc4);
+    }
+    50% {
+        filter: drop-shadow(0 0 10px #81ffd9);
+    }
+    100% {
+        filter: drop-shadow(0 0 0px #3bffc4);
+    }
 }
