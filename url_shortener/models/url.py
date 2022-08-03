@@ -1,6 +1,4 @@
-from ssl import create_default_context
-from textwrap import shorten
-from url_shortener import db
+from ..database.db import db
 from datetime import datetime
 
 class ShortUrls(db.Model):
