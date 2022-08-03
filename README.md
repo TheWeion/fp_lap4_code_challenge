@@ -1,5 +1,5 @@
 # Urlly
-
+![Urlly Logo](https://raw.githubusercontent.com/theweion/fp_lap4_code_challenge/main/url_shortener/static/img/urlly_logo.png)
 > Let’s face it, most developers are a bit lazy. One thing that can be really laborious is typing in very long URL’s, Urlly solves that problem!
 
 
