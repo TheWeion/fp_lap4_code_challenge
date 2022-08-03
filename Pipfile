@@ -5,11 +5,12 @@ name = "pypi"
 
 [packages]
 flask = "*"
+flask-cors = "*"
 flask-sqlalchemy = "*"
 psycopg2 = "*"
 gunicorn = "*"
 python-dotenv = "*"
-flask-cors = "*"
+waitress = "*"
 
 [dev-packages]
 
