@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<div class="section ">
-	<h1 class="text-center mb-3 text-light">{% block title %} Urlly the best URL shortener {% endblock %}</h1>
+<div class="section">
+	<img src="{{ url_for('static', filename='img/urlly_logo.png') }}" class="img-fluid mx-auto d-block" alt="Urlly Logo">
 	<div class="row">
 		<div class="col-md-2"></div>
 		<section id="url-form" class="col-md-8 url-form">
@@ -20,7 +20,7 @@
 				<div class="form-group text-center">
 					<button type="submit" class="btn btn-lg">Urllify!</button>
 				</div>
-				<p class="statement">By clicking Shorten URL, you agree to Urlly's <span class="bold-text">Terms of Use, Privacy Policy and Cookie Policy</span></p>
+				<p class="statement">By clicking Urllify, you agree to Urlly's <span class="bold-text">Terms of Use, Privacy Policy and Cookie Policy</span></p>
 			</form>
 				{% if short_url %}
 					<hr>
