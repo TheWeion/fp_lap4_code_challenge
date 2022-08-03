@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.main-container {
+.container {
     background-color: #28384A;
     margin: auto;
     display: flex;
@@ -10,11 +10,11 @@
     color: #fff;
 }
 
-#url-form {
+.url-form {
     padding: 60px 0;
 }
 
-#url_value {
+input {
     overflow: visible;
     cursor: text;
     padding: 5px;
@@ -22,7 +22,7 @@
     color: #000;
 }
 
-#shorten-url {
+button {
     background-color: #2281C2;
     color: aliceblue;
 }
