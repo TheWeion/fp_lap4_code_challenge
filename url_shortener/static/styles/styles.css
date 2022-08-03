@@ -54,4 +54,13 @@ input {
     color: aliceblue;
 }
 
+.popup-container {
+    background-color: aliceblue;
+    color: #000;
+    padding: 30px;
+}
+
+.short-url {
+    color: #000;
+}
 
