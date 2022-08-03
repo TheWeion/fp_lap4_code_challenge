@@ -20,8 +20,8 @@ body {
     padding-top: 60px;
 }
 
-h1 {
-    padding-top: 30px;
+h3 {
+    padding: 20px;
 }
 
 .url-form {
@@ -33,6 +33,7 @@ input {
     cursor: text;
     padding: 5px;
     color: #000;
+    margin: 5px 20px;
 }
 
 .btn {
