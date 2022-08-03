@@ -12,18 +12,11 @@
 - If User tries to access your website with a path you have stored in your database, they should get rerouted to the URL it relates to 
 - If User tries to access your website with a path you do not have stored in your database, they should get rerouted to the homepage where they can create a new short URL 
 
-**Example**:
-- User visits your site, `www.short.io`
-- User enters `http://getfutureproof.co.uk/` to the provided input
-- User receives a new, short URL eg. `www.short.io/u5o83` 
-- User can now access the futureproof site via the new, short URL
-
-
 ## Usage
 
-* Access our Urlly Tool: [HERE](https://weion.social)
+* Access our Urlly Tool: [HERE](https://urllify.herokuapp.com/)
 * User enter an URL to the provided input and a custom short ID (optional).
-* User receives a new, short URL eg. `{HEROKU_URL}/u5o83` 
+* User receives a new, short URL eg. `https://urllify.herokuapp.com/u5o83` 
 * User can now access the website via the new, Urllified link.
 
 ## Changelog
