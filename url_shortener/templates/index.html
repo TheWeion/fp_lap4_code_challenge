@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1 class="text-center mb-3">{% block title %} Urlly the best URL shortener {% endblock %}</h1>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<section id="url-form" class="col-md-8">
+			<form id="submission" method="POST" action="{{ url_for('main.index') }}">
+				<div class="form-floating mb-3 input">
+					<input type="url" class="form-control" id="url" name="url" placeholder="Enter URL" value="{{ request.form['url'] }}" autofocus />
+					<label for="url">Enter URL</label>
+				</div>
+				<div class="form-floating mb-3 input">
+					<input type="text" class="form-control" id="shortened_id" name="shortened_id" placeholder="Enter custom URL" value="{{ request.form['shortened_id'] }}" />
+					<label for="shortened_id">Enter Custom ID</label>
+				</div>
+				
+				<div class="form-group text-center">
+					<button type="submit" class="btn btn-lg btn-primary">Urllify!</button>
+				</div>
+				<p>By clicking Shorten URL, you agree to Urlly's Terms of Use, Privacy Policy and Cookie Policy</p>
+			</form>
+				{% if short_url %}
+					<hr>
+					<span>Your short URL is: <a href="{{ short_url }}">{{ short_url }}</a></span>
+				{% endif %}
+		</section>
+		<div class="col-md-2"></div>
+	</div>
+{% endblock %}

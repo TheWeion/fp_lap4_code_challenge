@@ -5,13 +5,19 @@ name = "pypi"
 
 [packages]
 flask = "*"
-flask-migrate = "*"
+flask-cors = "*"
 flask-sqlalchemy = "*"
 psycopg2 = "*"
 gunicorn = "*"
-python-decouple = "*"
+python-dotenv = "*"
+waitress = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.10"
+
+[scripts]
+init_db = "python3 init_db.py"
+dev = "flask run -p ${PORT}"
+start = "gunicorn url_shortener:app"
