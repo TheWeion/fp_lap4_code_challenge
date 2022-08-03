@@ -35,7 +35,7 @@ def index():
 
 	return render_template('index.html')
 
-@main_routes.route('/<short_id>')
+@main_routes.get('/<short_id>')
 def redirect_url(short_id):
     link = ShortUrls.query.filter_by(short_id=short_id).first()
     if link:
