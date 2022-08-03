@@ -1,6 +1,6 @@
 from decouple import config
 
-DATABASE_URI = config('DATABASE_URI')
+DATABASE_URI = config('DATABASE_URL')
 
 if DATABASE_URI.startswith('postgres'):
 	DATABASE_URI = DATABASE_URI.replace('postgres', 'postgresql')

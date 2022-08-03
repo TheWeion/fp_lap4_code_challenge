@@ -10,8 +10,14 @@ flask-sqlalchemy = "*"
 psycopg2 = "*"
 gunicorn = "*"
 python-decouple = "*"
+python-dotenv = "*"
+flask-cors = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.10"
+
+[scripts]
+dev = "flask run -p 8080"
+start = "gunicorn url_shortener:app"
