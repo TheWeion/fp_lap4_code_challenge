@@ -27,7 +27,8 @@ button {
 
 .statement {
     padding: 60px 0;
-    color: #000;
+    color: aliceblue;
+    text-align: center;
 }
 
 .bold-text {
