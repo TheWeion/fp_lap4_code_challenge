@@ -56,6 +56,7 @@ input {
 
 .popup-container {
     background-color: aliceblue;
+    border: 1px solid #28384A;
     border-radius: 5px;
     color: #000;
     padding: 20px;
