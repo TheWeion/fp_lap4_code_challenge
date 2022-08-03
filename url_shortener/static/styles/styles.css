@@ -31,6 +31,12 @@ input {
     color: #000;
 }
 
+footer {
+    padding-top: 30px;
+    text-align: center;
+    color: #81ffd9;
+}
+
 .btn {
     background-color: #81FFD9;
     color: #000;
