@@ -56,13 +56,13 @@ input {
 
 .popup-container {
     background-color: aliceblue;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #000;
     padding: 20px;
 }
 
 .popup-statement {
-    color: #fff;
+    color: #000;
 }
 
 .short-url {
