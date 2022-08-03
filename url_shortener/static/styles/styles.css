@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Audiowide-Regular';
+    src: url(../fonts/Audiowide\ Regular.ttf) format('truetype');
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    background: #28384A;
+}
+
+.hero-font {
+    font-family: 'Audiowide-Regular';
+}
+
+.container {
+    background-color: #28384A;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+h3 {
+    padding-top: 30px;
+}
+
+input {
+    overflow: visible;
+    cursor: text;
+    padding: 5px;
+    color: #000;
+}
+
+footer {
+    padding-top: 30px;
+    color: #81ffd9;
+}
+
+.btn {
+    background-color: #81FFD9;
+    color: #000;
+    margin: 20px auto;
+}
+
+.statement {
+    padding: 30px 0;
+    color: aliceblue;
+    text-align: center;
+}
+
+.bold-text {
+    color: #81FFD9;
+    font-weight: bold;
+}
+
+.bold-text:hover {
+    color: aliceblue;
+}
+
+.popup-container {
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: #000;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.popup-statement {
+    color: #000;
+}
+
+.short-url {
+    color: #000;
+    text-decoration: none;
+}
+
+#logo {
+    /* drop shadow for svg logo */
+    /* -webkit-filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7)); */
+
+    -webkit-animation: glowing 2s ease-in-out infinite;
+    animation: glowing 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes glowing {
+    0% {
+        -webkit-filter: drop-shadow(0 0 0px #3bffc4);
+    }
+    50% {
+        -webkit-filter: drop-shadow(0 0 10px #81ffd9);
+    }
+    100% {
+        -webkit-filter: drop-shadow(0 0 0px #3bffc4);
+    }
+}
+@keyframes glowing {
+    0% {
+        filter: drop-shadow(0 0 0px #3bffc4);
+    }
+    50% {
+        filter: drop-shadow(0 0 10px #81ffd9);
+    }
+    100% {
+        filter: drop-shadow(0 0 0px #3bffc4);
+    }
+}
