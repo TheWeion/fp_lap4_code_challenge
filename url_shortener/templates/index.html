@@ -3,7 +3,9 @@
 {% block content %}
 
 <div class="section ">
+	<img src="{{ url_for('static', filename='img/urlly_logo.png') }}" class="urlly-logo img-fluid mx-auto d-block" alt="Urlly Logo">
 	<h1 class="text-center mb-3 text-light">{% block title %}The best URL shortener in the world! {% endblock %}</h1>
+
 	<div class="row">
 		<div class="col-md-2"></div>
 		<section id="url-form" class="col-md-8 url-form">
