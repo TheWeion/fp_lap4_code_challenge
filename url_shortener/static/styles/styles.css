@@ -32,8 +32,8 @@ input {
 }
 
 .btn {
-    background-color: #2281C2;
-    color: aliceblue;
+    background-color: #81FFD9;
+    color: #000;
     margin: 20px auto;
 }
 
@@ -44,7 +44,7 @@ input {
 }
 
 .bold-text {
-    color: #3E96D4;
+    color: #81FFD9;
     font-weight: bold;
 }
 
