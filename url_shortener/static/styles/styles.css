@@ -2,15 +2,28 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    background: #28384A;
+}
+
 .container {
     background-color: #28384A;
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
+}
+
+h1 {
+    padding-top: 30px;
 }
 
 .url-form {
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 input {
@@ -20,24 +33,25 @@ input {
     color: #000;
 }
 
-button {
+.btn {
     background-color: #2281C2;
     color: aliceblue;
+    margin: 20px auto;
 }
 
 .statement {
-    padding: 60px 0;
+    padding: 30px 0;
     color: aliceblue;
     text-align: center;
 }
 
 .bold-text {
+    color: #3E96D4;
     font-weight: bold;
 }
 
-.link-text {
-    color: #3E96D4;
-    font-weight: bold;
+.bold-text:hover {
+    color: aliceblue;
 }
 
 
