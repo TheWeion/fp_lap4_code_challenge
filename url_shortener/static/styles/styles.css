@@ -17,7 +17,6 @@ input {
     overflow: visible;
     cursor: text;
     padding: 5px;
-    background-color: aliceblue;
     color: #000;
 }
 
@@ -27,9 +26,9 @@ button {
 }
 
 .statement {
-    background-color: #F5F7F8;
     padding: 60px 0;
-    color: #000;
+    color: aliceblue;
+    text-align: center;
 }
 
 .bold-text {
