@@ -20,11 +20,11 @@
 				<div class="form-group text-center">
 					<button type="submit" class="btn btn-lg">Urllify!</button>
 				</div>
-				<p class="statement">By clicking Shorten URL, you agree to Urlly's <span class="bold-text">Terms of Use, Privacy Policy and Cookie Policy</span></p>
+				<p class="statement">By clicking Urllify, you agree to Urlly's <span class="bold-text">Terms of Use, Privacy Policy and Cookie Policy</span></p>
 			</form>
 				{% if short_url %}
 					<hr>
-					<span class="statement text-center">Your short URL is: <a href="{{ short_url }}">{{ short_url }}</a></span>
+					<p class="statement text-center">Your short URL is: <a href="{{ short_url }}">{{ short_url }}</a></p>
 				{% endif %}
 		</section>
 		<div class="col-md-2"></div>
