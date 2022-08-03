@@ -7,11 +7,11 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 60px 0;
+    padding-top: 60px;
 }
 
 .url-form {
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 input {
@@ -34,15 +34,11 @@ input {
 }
 
 .bold-text {
-    font-weight: bold;
-}
-
-.link-text {
     color: #3E96D4;
     font-weight: bold;
 }
 
-.link-text:hover {
+.bold-text:hover {
     color: aliceblue;
 }
 
