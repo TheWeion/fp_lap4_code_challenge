@@ -17,7 +17,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 h3 {
@@ -57,7 +57,7 @@ input {
     border-radius: 5px;
     color: #000;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .popup-statement {
