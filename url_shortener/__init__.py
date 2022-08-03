@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from os import environ
 from flask import Flask
 from flask_cors import CORS
@@ -8,8 +7,6 @@ from .routes.main import main_routes
 
 # Load environment variables
 
-load_dotenv()
-
 database_uri = environ.get('DATABASE_URL')
 
 if 'postgres:' in database_uri:
@@ -18,6 +15,7 @@ if 'postgres:' in database_uri:
 # Set up the app
 
 app = Flask(__name__)
+app.config['CORS_HEADERS'] = 'Content-Type'
 app.config.update(
     SQLALCHEMY_DATABASE_URI=database_uri,
     SQLALCHEMY_TRACK_MODIFICATIONS=environ.get('SQLALCHEMY_TRACK_MODIFICATIONS')
