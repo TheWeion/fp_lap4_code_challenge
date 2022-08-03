@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from os import environ
+from os import environ, getenv
 from flask import Flask
 from flask_cors import CORS
 
@@ -18,6 +18,8 @@ if 'postgres:' in database_uri:
 # Set up the app
 
 app = Flask(__name__)
+app.secret_key = getenv('SECRET_KEY')
+
 app.config.update(
     SQLALCHEMY_DATABASE_URI=database_uri,
     SQLALCHEMY_TRACK_MODIFICATIONS=environ.get('SQLALCHEMY_TRACK_MODIFICATIONS')

@@ -15,13 +15,13 @@ def index():
 	if request.method == 'POST':
 		url = request.form['url']
 		short_id = request.form['shortened_id']
-
-		if short_id and ShortUrls.query.filter_by(short_id=short_id).first() is not None:
+  
+		if short_id and ShortUrls.query.filter_by(short_id=short_id).first():
 			flash('Shortened ID already exists!')
-			return redirect(url_for('index'))
+			return redirect(url_for('main.index'))
 		if not url:
 			flash('Please enter a URL!')
-			return redirect(url_for('index'))
+			return redirect(url_for('main.index'))
 		if not short_id:
 			short_id = gen_short_id(5)
 
@@ -42,4 +42,4 @@ def redirect_url(short_id):
         return redirect(link.original_url)
     else:
         flash('Invalid URL')
-        return redirect(url_for('index'))
+        return redirect(url_for('main.index'))
