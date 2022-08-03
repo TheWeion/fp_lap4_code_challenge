@@ -21,7 +21,7 @@ body {
 }
 
 h3 {
-    padding: 20px;
+    padding-top: 30px;
 }
 
 input {
@@ -54,7 +54,6 @@ input {
 
 .popup-container {
     background-color: aliceblue;
-    border: 1px solid #28384A;
     border-radius: 5px;
     color: #000;
     padding: 20px;
@@ -68,9 +67,3 @@ input {
     color: #000;
     text-decoration: none;
 }
-
-.urlly-logo {
-    max-height: 200px;
-    width: auto;
-}
-
