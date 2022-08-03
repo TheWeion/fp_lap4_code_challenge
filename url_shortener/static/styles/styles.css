@@ -23,6 +23,7 @@ input {
 button {
     background-color: #2281C2;
     color: aliceblue;
+    margin: 20px auto;
 }
 
 .statement {
