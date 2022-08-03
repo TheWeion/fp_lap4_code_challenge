@@ -23,19 +23,21 @@
 
 ### url_shortener/routes/main.py
 
+- [x] Fixed bug where check for existing short ID was resulting in error 500.
+
 - [x] Added Exception handling.
 
-- [x] Added `/<short_id>` route to redirect to long URL
+- [x] Added `/<short_id>` route to redirect to long URL.
 
-- [x] Added Routes for URL shortening
+- [x] Added Routes for URL shortening.
 
 ### url_shortener/models/url.py
 
-- [x] Added URL model for the database
+- [x] Added URL model for the database.
 
 ### url_shortener/static/styles/styles.css
 
-- [x] Added CSS for static pages
+- [x] Added CSS for static pages.
 
 ### url_shortener/templates/index.html
 
@@ -43,9 +45,11 @@
 
 ### url_shortener/templates/base.html
 
-- [x] Added template for the base structure of the website
+- [x] Added template for the base structure of the website.
 
 ### url_shortener/__init__.py
+
+- [x] Implemented Secret Key for the application.
 
 - [x] Implemented first iteration of DB structure.
 
