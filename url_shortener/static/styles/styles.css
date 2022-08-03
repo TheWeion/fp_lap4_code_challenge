@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.main-container {
+.container {
     background-color: #28384A;
     margin: auto;
     display: flex;

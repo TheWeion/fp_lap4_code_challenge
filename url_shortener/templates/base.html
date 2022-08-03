@@ -11,12 +11,12 @@
             crossorigin="anonymous"
         >
         <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='/styles/styles.css') }}">
         <title>{% block title %} {% endblock %}</title>
     </head>
 
     <body>
-        <main class="main-container mt-3">
+        <main class="container mt-3">
             {% for message in get_flashed_messages() %}
                 <div class="alert alert-warning">{{ message }}</div>
             {% endfor %}
