@@ -40,4 +40,8 @@ button {
     font-weight: bold;
 }
 
+.link-text:hover {
+    color: aliceblue;
+}
+
 
